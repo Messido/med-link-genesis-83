@@ -32,9 +32,9 @@ const LoginPage: React.FC = () => {
   ];
 
   return (
-    <div className="min-h-screen flex">
+    <div className="min-h-screen flex h-screen">
       {/* Left side - Features with medical gradient background */}
-      <div className="hidden lg:flex lg:w-1/2 bg-gradient-to-br from-medical-500 to-medical-600 p-16 flex-col justify-center items-center relative">
+      <div className="hidden lg:flex lg:w-1/2 bg-gradient-to-br from-medical-500 to-medical-600 p-16 flex-col justify-center items-center relative h-full">
         <div className="max-w-md text-white text-center">
           <div className="mb-12">
             <h1 className="text-5xl font-bold mb-6">
@@ -70,7 +70,7 @@ const LoginPage: React.FC = () => {
       <Separator orientation="vertical" className="hidden lg:block w-1 bg-gradient-to-b from-medical-400 to-medical-600" />
 
       {/* Right side - Login Form with light background */}
-      <div className="flex-1 flex items-center justify-center p-12 bg-gradient-to-br from-medical-50 to-medical-100">
+      <div className="flex-1 flex items-center justify-center p-12 bg-gradient-to-br from-medical-50 to-medical-100 h-full">
         <div className="w-full max-w-2xl">
           <div className="bg-white rounded-3xl shadow-2xl p-16 animate-fade-in border border-medical-200">
             <div className="text-center mb-12">
