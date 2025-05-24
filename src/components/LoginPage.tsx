@@ -34,8 +34,8 @@ const LoginPage: React.FC = () => {
   return (
     <div className="min-h-screen flex">
       {/* Left side - Features with medical gradient background */}
-      <div className="hidden lg:flex lg:w-1/2 bg-gradient-to-br from-medical-500 to-medical-600 p-16 flex-col justify-center relative">
-        <div className="max-w-lg text-white">
+      <div className="hidden lg:flex lg:w-1/2 bg-gradient-to-br from-medical-500 to-medical-600 p-16 flex-col justify-center items-center relative">
+        <div className="max-w-md text-white text-center">
           <div className="mb-12">
             <h1 className="text-5xl font-bold mb-6">
               Healthcare Connected
@@ -50,7 +50,7 @@ const LoginPage: React.FC = () => {
             {features.map((feature, index) => (
               <div 
                 key={index}
-                className="flex items-start space-x-6 animate-fade-in"
+                className="flex flex-col items-center text-center space-y-4 animate-fade-in"
                 style={{ animationDelay: `${index * 0.1}s` }}
               >
                 <div className="flex-shrink-0 w-16 h-16 bg-white/20 backdrop-blur-sm rounded-xl flex items-center justify-center text-white shadow-lg">
@@ -71,8 +71,8 @@ const LoginPage: React.FC = () => {
 
       {/* Right side - Login Form with light background */}
       <div className="flex-1 flex items-center justify-center p-12 bg-gradient-to-br from-medical-50 to-medical-100">
-        <div className="w-full max-w-lg">
-          <div className="bg-white rounded-3xl shadow-2xl p-12 animate-fade-in border border-medical-200">
+        <div className="w-full max-w-2xl">
+          <div className="bg-white rounded-3xl shadow-2xl p-16 animate-fade-in border border-medical-200">
             <div className="text-center mb-12">
               <div className="w-20 h-20 bg-medical-gradient-dark rounded-full flex items-center justify-center mx-auto mb-6 animate-float shadow-lg">
                 <Stethoscope className="w-10 h-10 text-white" />
